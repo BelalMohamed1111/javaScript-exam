@@ -1,0 +1,111 @@
+
+#navContainer {
+  display: flex; 
+  height: 100vh; 
+  position: fixed; 
+  z-index: 1000; 
+}
+
+#whiteSection {
+  width: 80px; 
+  background-color: white; 
+  transition: all 0.5s ease; 
+}
+
+#linkSection {
+  width: 0; 
+  transition: width 0.5s ease; 
+  background-color: black; 
+  overflow: hidden; 
+}
+
+.nav-expanded #linkSection {
+  width: 200px; 
+}
+
+.nav-link-hide {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.nav-link-appear {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card {
+  border: none; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.card-img-top {
+  width: 100%; 
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: -100%; 
+  left: 0;
+  right: 0;
+  height: 100%; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  transition: bottom 0.5s ease; 
+}
+
+.card:hover .overlay {
+  bottom: 0; 
+}
+
+.meal-name {
+  padding: 10px; 
+  font-size: 1.5em; /
+  font-weight: bold; 
+  color: #000; 
+  text-align: center; 
+  width: 100%; 
+}
+
+#mealDetails {
+  padding: 50px; 
+  padding-left: 110px;
+}
+
+#mealDetails h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#mealDetails .btn-blue {
+  background-color: #CFF4FC;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#mealDetails .btn-red {
+  background-color: #F8D7DA;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#searchSection {
+  padding-left: 110px;
+}
+
+#mealsSection {
+  padding-left: 80px;
+}
+
+
+.ingredient-card {
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+
